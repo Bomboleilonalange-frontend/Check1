@@ -1,0 +1,191 @@
+.header_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #31d300;
+}
+
+a,
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.logo{
+    font-size: 25px;
+}
+
+.nav-list{
+    display: flex;
+    column-gap: 50px;   
+}
+
+.nav-list a:hover{
+    color: #FFFFFF;
+}
+
+.backet_button{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.backet_button:hover{
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.backet_button:active{
+    transform: scale(0.96);
+}
+
+.main{
+    margin: 50px auto;
+    min-height: calc(100vh - 200px);
+}
+
+.main_heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.Product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    border: 1px solid #00d300;
+    transition: all 0.1s ease-in-out;
+    width: 350px;
+    height: 490px;
+}
+
+.Product img {
+    width: 250px;
+    height: 200px;
+}
+
+.Product h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+}
+
+.add {
+    width: 146px;
+    height: 51px;
+    background-color: #00d300;
+    border-radius: 67px;
+    transition: width 0.3s ease-in-out;
+}
+
+.Off-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+}
+
+.click {
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    width: 41px;
+    height: 41px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.click:active {
+    transform: scale(0.96);
+}
+
+.plus::before {
+    position: absolute;
+    content: "+";
+    font-size: 43px;
+    line-height: 37px;
+    color: rgba(0, 0, 0, 0.67);
+    width: 41px;
+    height: 40px;
+    left: 0px;
+    top: 2px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.price {
+    font-family: "Forum";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 36px;
+    color: #fff;
+}
+
+.reg_auth_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: #31d300;
+}
+
+.reg_auth_label{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.reg_auth_input{
+    width: 250px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+
+.reg_auth_button{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.reg_auth_button:hover{
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.reg_auth_button:active{
+    transform: scale(0.96);
+}
