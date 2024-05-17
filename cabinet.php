@@ -46,6 +46,32 @@ if ($result) {
                 <p><a href="php/logout.php">Выход</a></p>
                 <p><a href="php/account_delete.php">Удаление аккаунта</a></p>
             </div>
+            <div class="orders-information">
+                <?php
+                $sql = "SELECT o.order_id, o.date, o.status FROM orders o WHERE o.user_id = '$user_id'";
+                $result = mysqli_query($con, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                    echo "<table>
+  <tr>
+    <th>Номер заказа</th>
+    <th>Статус</th>
+    <th>Дата заказа</th>
+  </tr>";
+
+                    while ($row = mysqli_fetch_assoc($result)) {
+
+                        echo "<tr>
+    <td>" . $row['order_id'] . "</td>
+    <td>" . $row['status'] . "</td>
+    <td>" . $row['date'] . "</td>
+  </tr>";
+                    }
+
+                    echo "</table>";
+                }
+                mysqli_close($con);
+                ?>
+            </div>
         </div>
     </section>
 </body>
